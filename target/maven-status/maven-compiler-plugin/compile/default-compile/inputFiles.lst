@@ -1,0 +1,15 @@
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\domain\entidad\SistemaSolar.java
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\rest\controller\PronosticoController.java
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\domain\factories\factoryImpl\BetasoidePlanetaFactory.java
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\domain\factories\factory\PlanetaFactory.java
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\domain\factories\factoryImpl\SolFactory.java
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\domain\entidad\ClimaDia.java
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\rest\repositorio\PronosticoRepositorio.java
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\rest\service\Pronostico.java
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\domain\factories\factoryImpl\VulcanoPlanetaFactory.java
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\domain\entidad\InfoClima.java
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\domain\clima\PlanetaNombre.java
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\domain\entidad\Planeta.java
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\domain\factories\factoryImpl\FerengiPlanetaFactory.java
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\domain\clima\TipoClima.java
+C:\Users\Luciano\workspace\climaAPI\src\main\java\com\sistemaSolar\climaAPI\ClimaApiApplication.java
