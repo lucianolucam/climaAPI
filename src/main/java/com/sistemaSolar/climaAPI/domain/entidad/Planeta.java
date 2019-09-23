@@ -5,7 +5,7 @@ import java.awt.geom.Point2D;
 import org.apache.commons.lang3.Validate;
 import org.apache.commons.math3.util.Precision;
 
-import com.sistemaSolar.climaAPI.domain.factories.factory.PlanetaFactory;
+import com.sistemaSolar.climaAPI.domain.factory.PlanetaFactory;
 
 
 public class Planeta {

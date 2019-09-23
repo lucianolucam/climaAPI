@@ -1,8 +1,8 @@
-package com.sistemaSolar.climaAPI.domain.factories.factoryImpl;
+package com.sistemaSolar.climaAPI.domain.factoryImpl;
 
 import com.sistemaSolar.climaAPI.domain.clima.PlanetaNombre;
 import com.sistemaSolar.climaAPI.domain.entidad.Planeta;
-import com.sistemaSolar.climaAPI.domain.factories.factory.PlanetaFactory;
+import com.sistemaSolar.climaAPI.domain.factory.PlanetaFactory;
 
 public class FerengiPlanetaFactory implements PlanetaFactory {
 	

@@ -16,10 +16,10 @@ import com.sistemaSolar.climaAPI.domain.clima.TipoClima;
 import com.sistemaSolar.climaAPI.domain.entidad.InfoClima;
 import com.sistemaSolar.climaAPI.domain.entidad.Planeta;
 import com.sistemaSolar.climaAPI.domain.entidad.SistemaSolar;
-import com.sistemaSolar.climaAPI.domain.factories.factoryImpl.BetasoidePlanetaFactory;
-import com.sistemaSolar.climaAPI.domain.factories.factoryImpl.FerengiPlanetaFactory;
-import com.sistemaSolar.climaAPI.domain.factories.factoryImpl.SolFactory;
-import com.sistemaSolar.climaAPI.domain.factories.factoryImpl.VulcanoPlanetaFactory;
+import com.sistemaSolar.climaAPI.domain.factoryImpl.BetasoidePlanetaFactory;
+import com.sistemaSolar.climaAPI.domain.factoryImpl.FerengiPlanetaFactory;
+import com.sistemaSolar.climaAPI.domain.factoryImpl.SolFactory;
+import com.sistemaSolar.climaAPI.domain.factoryImpl.VulcanoPlanetaFactory;
 import com.sistemaSolar.climaAPI.rest.repositorio.PronosticoRepositorio;
 
 @Component
