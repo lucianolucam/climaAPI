@@ -1,6 +1,5 @@
 package com.sistemaSolar.climaAPI.rest.controller;
 
-import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.sistemaSolar.climaAPI.domain.clima.TipoClima;
 import com.sistemaSolar.climaAPI.domain.entidad.ClimaDia;
+import com.sistemaSolar.climaAPI.domain.entidad.DiasLluviosos;
 import com.sistemaSolar.climaAPI.domain.entidad.InfoClima;
+import com.sistemaSolar.climaAPI.domain.entidad.Periodo;
 import com.sistemaSolar.climaAPI.rest.repositorio.PronosticoRepositorio;
 
 @Controller
@@ -40,30 +42,38 @@ public class PronosticoController {
 	
 	@GetMapping("/periodos-sequia")
     @ResponseBody
-    public Long periodosDeSequia() {
-		Long periodosSequia = pronosticoRepositorio.periodosDeSequia();
-        return periodosSequia;
+    public Periodo periodosDeSequia() {
+		Periodo periodo = new Periodo();
+		periodo.setCantidad(pronosticoRepositorio.periodosDeSequia()); 
+		periodo.setPeriodo(TipoClima.SEQUIA.getValue());
+        return periodo;
     }
 
     @GetMapping("/periodos-lluvia")
     @ResponseBody
-    public Long periodosDeLluvia() {
-    	Long periodosLluvia = pronosticoRepositorio.periodosDeLluvia();
-        return periodosLluvia;
+    public Periodo periodosDeLluvia() {
+    	Periodo periodo = new Periodo();
+    	periodo.setCantidad(pronosticoRepositorio.periodosDeLluvia());
+    	periodo.setPeriodo(TipoClima.LLUVIA.getValue());
+        return periodo;
     }
 
     @GetMapping("/periodos-optimas-condiciones")
     @ResponseBody
-    public Long periodosDeCondicionesOptimas() {
-        Long periodosOptimos = pronosticoRepositorio.periodosDeCondicionesOptimas();
-    	return periodosOptimos;
+    public Periodo periodosDeCondicionesOptimas() {
+    	Periodo periodo = new Periodo();
+    	periodo.setCantidad(pronosticoRepositorio.periodosDeCondicionesOptimas());
+    	periodo.setPeriodo(TipoClima.CONDICIONES_OPTIMAS.getValue());
+    	return periodo;
     }
 
 
     @GetMapping("/maxima-intensidad-lluvia")
     @ResponseBody
-    public List<Integer> periodosDeLluviaIntensa() {
-    	List<Integer> diasMasLluviosos = pronosticoRepositorio.periodosMasLluviosos();
+    public DiasLluviosos periodosDeLluviaIntensa() {
+    	DiasLluviosos diasMasLluviosos = new DiasLluviosos();
+    	diasMasLluviosos.setDescripcion("Los diás más lluviosos fueron");
+    	diasMasLluviosos.setDias(pronosticoRepositorio.periodosMasLluviosos()); 
         return diasMasLluviosos;
     }
 
