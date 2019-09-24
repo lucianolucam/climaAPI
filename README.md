@@ -1,4 +1,4 @@
-Correr aplicacion en local
+#Correr aplicacion en local
 
 Para ejecutar la aplicación desde Eclipse, simplemente ejecute la clase com.sistemaSolar.climaAPI.ClimaApiApplication como una aplicación Java. 
 Alternativa, la aplicación puede iniciarse desde un terminal utilizando maven con mvn spring-boot:run. Después de iniciar la aplicación la misma se levanta en http://localhost:8086/api/
