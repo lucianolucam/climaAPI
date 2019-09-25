@@ -7,7 +7,7 @@ Básicamente se tiene un método llamado ***SimulacionSistemaSolar*** que lo que
 Luego tenemos una controller llamado ***PronosticoController*** que es quien maneja los Request.
 
 
-<h5>Para calcular si un punto está dentro de un triángulo se usó la siguiente función:</h5>
+<h4>Para calcular si un punto está dentro de un triángulo se usó la siguiente función:</h4>
 
 det = (bx - ax) * (cy - ay) - (by - ay) * (cx - ax)
 	
@@ -18,7 +18,7 @@ det * ((ax - cx) * (y - cy) - (ay - cy) * (x - cx)) > 0
 Obtenida de la siguiente página:
 https://jsfiddle.net/jniac/rctb3gfL/
 
-<h5>Planetas alineados entre sí</h5>
+<h4>Planetas alineados entre sí</h4>
 
 Y para calcular si los planetas están alineados entre si, y entre si con el sol, se toman de a 3 y se utiliza la formula de calcular la pendiente entre 2 puntos, si son iguales, es porque pertenecen a la misma recta:
 
