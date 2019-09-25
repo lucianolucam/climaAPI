@@ -4,6 +4,7 @@ https://github.com/lucianolucam/climaAPI/blob/master/src/main/resources/Ejercici
 <h1>Resolución</h1>
 
 Primer punto, para ser más sencillo, asumimos que el año tiene 360 días.
+
 Básicamente se tiene un método llamado ***SimulacionSistemaSolar*** que lo que hace es simular el paso de los 10 años. Dentro del mismo se calcula la posición de cada planeta día a día y luego se llama al método ***CalcularClima*** que calcula el clima para cada día y lo guarda en la BD.
 Luego tenemos una controller llamado ***PronosticoController*** que es quien maneja los Request.
 
